@@ -1,0 +1,256 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+  overflow: hidden;
+    width: 100%;
+   min-height: 100vh;
+   
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vh 8vh;
+    
+    width: 100vw;
+    min-height: 10vh;
+   color: #000;
+   background-color: #dadadaa4;
+}
+#links{
+   display: flex;
+   gap: 4ch;
+   margin-left: 30vw;
+  
+
+}
+#links a{
+    text-decoration: none;
+    color: #000;
+
+}
+#rnav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15vw;
+    gap: 5vw;
+   
+
+}
+#rnav i{
+   
+    font-size: 2vw;
+}
+#rnav button{
+    padding: 1vh 3vh;
+    box-shadow: 3px 5px 4px 3px rgba(0, 0, 0, 0.445);
+    border: none;
+    border-radius: 10px;
+    margin-right: 5vw;
+}
+#home{
+    display: flex;
+    width: 100%;
+   min-height: 90vh;
+   
+}
+
+#left{
+    position: relative;
+    width: 35%;
+ min-height: 90vh;
+
+}
+#left #text{
+    position: absolute;
+    top: 10vh;
+    width: 90vh;
+    right: -65vh;
+}
+#text h2{
+    font-size: 5vh;
+}
+#text p{
+    font-size: 2vh;
+    width: 25vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+#text button{
+    background-color: rgba(255, 228, 196, 0.719);
+    padding: 1vh 3vh;
+    box-shadow: 3px 5px 4px 3px rgba(0, 0, 0, 0.445);
+    border: none;
+    border-radius: 10vw;
+}
+#center{
+    width: 40vw;
+ min-height: 90vh;
+ background-color: #000;
+ background-image: url(https://images.unsplash.com/photo-1720521181253-17620a1f1a35?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+background-position: center; 
+ background-size: cover;
+}
+#right{
+ 
+
+    width: 25%;
+ min-height: 90vh;
+
+}
+#right #circle{
+display: flex;
+align-items: center;
+justify-content: center;
+    height: 5vw;
+    width: 5vw;
+    background-color: #000;
+    border-radius: 50%;
+    margin-top: .3vw;
+    margin-left: -1vw;
+}
+#circle i{
+   
+    color: white;
+    font-size: 1.5vw;
+}
+#text2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+  
+}
+.clo1{
+    position: absolute;
+    top: 30vh;
+
+}
+.clo2{
+    position: absolute;
+    top: 19vh; 
+}
+.clo2 h5{
+ font-size: 2.5vh;
+ opacity: .5;
+}
+.clo1 h5{
+    font-size: 2.5vh;
+    opacity: .5;
+   }
+ .clo1 h3{
+    font-size: 3vh;
+ }
+ .clo2 h3{
+    font-size: 3vh;
+ }
+
+
+#icons{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-top: 55vh;
+    padding: 5vh;
+
+}
+#icons i{
+    padding-right: 6vh;
+    font-size: 5vh;
+}
+@media(max-width:500px){
+    #nav #links{
+        display: none;
+    }
+    #rnav i{
+        font-size: 3vh;
+    }
+    #home{
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
+    #home #left{
+        position: static;
+      width: 100vh;
+      min-height: 30.5vh;
+      
+    }
+    #left  #text{
+        position: static;
+        margin-left: 10vh;
+      
+       
+    }
+    #text h2{
+        font-size: 3.5vh;
+    }
+    #text p{
+        font-size: 1.5vh;
+    }
+    #text button{
+        padding: 1vh 3.5vh;
+        font-size: 2vh;
+    }
+    #center{
+        width: 100vw;
+       min-height: 44vh;
+     
+    }
+    #right{
+        width: 100vw;
+        min-height: 25vh;
+    }
+    #text2{
+        margin-bottom: -45vh
+        
+    }
+    #text2 .clo2 {
+        top: 0vh;
+    }
+    #text2  .clo1{
+        top: 8vh;
+    }
+    .clo2 h5{
+        font-size: 2vh;
+        opacity: .5;
+       }
+       .clo1 h5{
+           font-size: 2vh;
+           opacity: .5;
+          }
+        .clo1 h3{
+           font-size: 2.5vh;
+        }
+        .clo2 h3{
+           font-size: 2.5vh;
+        }
+        #icons i{
+            padding-right: 6vh;
+            font-size: 3vh;
+        }
+        #right #circle{
+            height: 9vw;
+            width: 9vw;
+        }
+        #circle i{
+            font-size: 1.7vh;
+        }
+       
+}
